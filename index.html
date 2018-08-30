@@ -16,7 +16,48 @@
 
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
+  <h1 id="index"><a href="index.html">WEB</a></h1>
+<!--
+<input type="button" value="Night" onclick="
+document.querySelector('body').style.backgroundColor = 'black';
+document.querySelector('body').style.color = 'white';">
+<input type="button" value="Day" onclick="
+document.querySelector('body').style.backgroundColor = 'white';
+document.querySelector('body').style.color = 'black';">
+-->
+
+<!--
+<input id="night_day" type="button" value="night" onclick="
+if (document.querySelector('#night_day').value === 'night')
+{
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  document.querySelector('#night_day').value = 'day'
+}
+else
+{
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  document.querySelector('#night_day').value = 'night'
+}
+">
+-->
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if (this.value === 'night')
+{
+  target.style.backgroundColor = 'black';
+  target.style.color = 'white';
+  this.value = 'day'
+}
+else
+{
+  target.style.backgroundColor = 'white';
+  target.style.color = 'black';
+  this.value = 'night'
+}
+">
+
   <div id="grid">
     <ol>
       <li><a href="1.html"calss="saw">HTML</a></li>
@@ -24,16 +65,32 @@
       <li><a href="3.html"> CSS</a></li>
     </ol>
       <div id = "article">
+
+        <a href ="https://www.w3.org/TR/2010/WD-html5-20100624/"
+        target="_blank" tilte="html5
+        specification">
+
           <h2>Wellcome: Home</h2>
-            <p><a href ="https://www.w3.org/TR/2010/WD-html5-20100624/"
-            target="_blank" tilte="html5
-            specification">
-          </p>
-          Hello Bro!
+        </a>
+
+          <br>Hello Bro!</br>
           <p>Ralph Jang's first Webpage</p>
           <p>2018-08-27</p>
-          <p style="margin-top:45px;">
-            <img src="https://github.com/ssosee/web1/blob/master/coding.jpg" width="100%">
+            <input type="button" value="night" onclick="
+            if (this.value === 'night')
+            {
+              document.querySelector('body').style.backgroundColor = 'black';
+              document.querySelector('body').style.color = 'white';
+              this.value = 'day'
+            }
+            else
+            {
+              document.querySelector('body').style.backgroundColor = 'white';
+              document.querySelector('body').style.color = 'black';
+              this.value = 'night'
+            }
+            ">
+
           </p>
       </div>
     </div>
